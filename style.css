@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #fff;
+    color: #333;
+}
+
+.game-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+#score {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.arrow {
+    margin-top: 20vh;
+    font-size: 200px;
+    cursor: default;
+    /* color: #36a2eb; */
+    /* color: #ff6384; */
+}
+
+/* Animations */
+.animate__animated.animate__bounceIn,
+.animate__animated.animate__pulse {
+    animation-duration: 0.65s;
+}
+
+.animate__animated.animate__shakeX,
+.animate__animated.animate__flash {
+    animation-duration: 0.25s;
+}
+
+/* progress bar */
+
+#progress-bar-container {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #00cc99;
+    border-radius: 5px;
+    transition-duration: 0.7s;
+    transition-property: background-color;
+}
+
+/* Restart game button */
+
+#restartGameButton {
+    position: absolute;
+    right: 45px;
+    top: 1px;
+    font-size: 26px;
+    background-color: #ccc;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#restartGameButton:hover {
+    background-color: #333;
+}
+
+#restartGameButton:active {
+    background-color: #000;
+}
+
+@media(max-width:767px) {
+    .arrow {
+        font-size: 170px;
+    }
+
+    #restartGameButton {
+        font-size: 18px;
+        top: 4px;
+        right: 8px;
+    }
+}
