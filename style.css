@@ -14,7 +14,7 @@ body {
 
 .game-container {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     text-align: center;
     padding: 20px;
 }
@@ -88,6 +88,14 @@ body {
     background-color: #000;
 }
 
+.restart {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
 @media(max-width:767px) {
     .arrow {
         font-size: 170px;
@@ -97,5 +105,13 @@ body {
         font-size: 18px;
         top: 4px;
         right: 8px;
+    }
+
+    .restart {
+        position: absolute;
+        top: 42px;
+        right: 8px;
+        font-weight: bold;
+        font-size: 9px;
     }
 }
